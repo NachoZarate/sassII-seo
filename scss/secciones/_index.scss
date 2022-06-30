@@ -1,0 +1,15 @@
+main{
+    h1{
+        color: white;
+        background-color: black;
+    }
+    .section2{
+        p{
+            @extend %estiloParrafo
+        }
+        
+        }
+    }
+    .imagenLogo{
+        @include logoGrande(1.5)
+    }

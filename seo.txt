@@ -1,0 +1,3 @@
+1. Agregue keywords en los html.
+2. Trabaje sobre las etiquetas title
+3.Agregue etiqueta description.

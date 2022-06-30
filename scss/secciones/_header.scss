@@ -1,0 +1,25 @@
+nav{
+    ul{
+        display: flex;
+        li{
+            text-decoration: none;
+            list-style: none;
+            padding: 1rem;
+            &:hover{
+                background-color: brown;
+            }
+            a{
+                color: aqua;
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 850px){
+    nav{
+        ul{
+            flex-direction: column;
+        }
+    }
+}

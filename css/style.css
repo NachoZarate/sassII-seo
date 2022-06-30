@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grilla{
+  display: grid;
+  background-image: linear-gradient(to bottom, black, rgb(39, 38, 39));
+  grid-template-columns: (3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+  "header header header header"
+  "section1 section1 section2 section2"
+  "section1 section1 section2 section2"
+  "footer footer footer footer"
+  ;
+  width: 99%;
+  margin: 5px auto;
+}
+  
+  .header { 
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+    background-image: url(https://static.roland.com/assets/promos/jpg/cat_marquee_a-88mk2.jpg); 
+    }
+  header .logo {
+    grid-area: logo;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 55%
+    ;
+  }
+
+  .imagenLogo {
+    margin-left: 45%;
+  }
+
+  .logoTitulo {
+    margin-left: 75%;
+  }  
+
+  .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    list-style: none;
+    font-size: 120%;
+  }
+
+  .lista li{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between ;
+    margin-right: 10px;
+    padding: 5px;
+    transition: all 0.3s;
+  }
+
+  .lista li:hover{
+    transform: scale(1.5);
+  }
+
+  
+  .section1 { 
+    grid-area: section1; 
+    width: 100%;
+  }
+  
+  .section2 { 
+    grid-area: section2;
+    color: aliceblue; 
+  }
+  
+  .footer { 
+    grid-area: footer; 
+    text-align: center;
+    padding: 2px;
+  }
+
+  footer i{
+    color: aliceblue;
+    font-size: 60px;
+    padding: 10%;
+  }
+  
+  @media (max-width: 768px) {
+  }
